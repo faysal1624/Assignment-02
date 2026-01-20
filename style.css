@@ -12,7 +12,7 @@
   font-style: normal;
 }
 body{
-  width: 1600px;
+  width: auto;
 
 }
 
@@ -88,7 +88,7 @@ hr{
 } 
 .microphone{
   position: absolute;
-  padding-top: 170px;
+  padding-top: 180px;
 }
 .top-new{
   position: absolute;
@@ -98,7 +98,22 @@ hr{
   border-radius: 40px;
  margin-top: 120px;
  margin-left: 220px;
+ animation: pulse 1s infinite;
 }
+
+@keyframes pulse{
+  0%{
+    transform: translateX(-50%) scale(1.5);
+  }
+  50%{
+    transform: translateX(-50%) scale(1.1);
+  }
+  100%{
+    transform: translateX(-50%) scale(1.5);
+  }
+}
+
+
 .wave-container{
   text-align: center;
   color: white;
@@ -308,15 +323,21 @@ footer{
     font-size: 1rem;
     padding-left: 100px;
 }
+
+
+
+
 @media screen and (max-width: 576px) {
 
   body{
-    width: 100%;
+    width: 100%; 
     overflow-x: hidden;
   }
 
   header{
     height: auto;
+    width: auto;
+  
   }
   /* /* .navbar img{
     width: 150px;
@@ -345,6 +366,7 @@ footer{
   .main-container{
     height: auto;
     padding-bottom: 40px;
+    
   }
 
   .hero-circle{
@@ -364,10 +386,10 @@ footer{
   }
 
   .top-new{
-    margin-left: 80px;
-    left: 50%;
+    /* left: 50%; */
     transform: translateX(-50%);
     margin-top: 90px;
+    /* margin-left: 0; */
   }
 
   .wave-container h3{
@@ -383,7 +405,7 @@ footer{
   }
 
   .about-card{
-    flex-direction: none;
+    flex-direction: column;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -474,7 +496,7 @@ footer{
     flex-direction: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px 0;
+    padding: 20px 20px 20px 0;
     gap: 10px;
   }
 
