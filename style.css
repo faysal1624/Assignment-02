@@ -42,6 +42,7 @@ header{
 }
 .nav-contain a:hover {
   color: burlywood;
+  background-color: #9100F8;
 }
 .btn{
   border-radius: 50px;
@@ -50,6 +51,7 @@ header{
   border: none;
   color: white;
  background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8)
+ 
 }
 .btn-2{
   border-radius: 50px;
@@ -58,6 +60,7 @@ header{
   border: none;
   color: white;
  background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8)}
+ 
 
 .only-phone{
   display: none;
