@@ -89,7 +89,21 @@ hr{
 .microphone{
   position: absolute;
   padding-top: 180px;
+  animation:  micWave 2s infinite;
+
 }
+
+@keyframes micWave{
+  0%{
+    transform: translate(0%, 0%) scale(0.5);
+    opacity: 1;
+  }
+  0%{
+    transform: translate(0%, 0%) scale(0.5);
+    opacity: 0;
+  }
+}
+
 .top-new{
   position: absolute;
   font-size: 1rem;
