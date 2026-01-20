@@ -403,10 +403,10 @@ footer{
   }
 
   .top-new{
-    /* left: 50%; */
+  
     transform: translateX(-50%);
     margin-top: 90px;
-    /* margin-left: 0; */
+  
   }
 
   .wave-container h3{
